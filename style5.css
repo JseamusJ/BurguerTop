@@ -295,7 +295,7 @@ html {
 
 .formulario {
     width: 100%;
-    max-width: ; /* Garante que o formulário tenha um limite máximo de largura */
+    max-width: 650px; /* Garante que o formulário tenha um limite máximo de largura */
     background-color: #fff;
     border-radius: 10px;
     padding: 3rem;
