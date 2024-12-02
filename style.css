@@ -239,7 +239,7 @@ html {
     font-weight: bold; /* Deixa o texto em negrito */
     color: #585858; /* Cor do texto (exemplo: vermelho) */
     display: block; /* Faz o span se comportar como um bloco (pode ser útil para quebrar linha) */
-    margin-top: 30px; /* Adiciona um espaçamento superior */
+    margin-top: 20px; /* Adiciona um espaçamento superior */
     text-align: center;
     text-decoration: underline;
     
@@ -571,7 +571,7 @@ footer {
     .sobre-nos img {
         width: 350px; /* Reduz o tamanho da imagem */
         margin-left: 0;
-        margin-top: 3rem; /* Menos espaço superior em telas menores */
+        margin-top: 2rem; /* Menos espaço superior em telas menores */
     }
 
     .contentsobre {
@@ -580,7 +580,7 @@ footer {
 
     .contentsobre h2 {
         font-size: 4rem; /* Reduz o tamanho do título */
-        margin-top: 8rem;
+        margin-top: 1rem;
     }
 
     .contentsobre p {
@@ -590,6 +590,7 @@ footer {
 
     footer .footer-content {
         width: 90%;  /* Ajuste a largura para telas menores */
+        margin-top: 1rem;
     }
 
     footer .footer-content .footer-section {
