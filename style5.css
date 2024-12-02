@@ -295,7 +295,7 @@ html {
 
 .formulario {
     width: 100%;
-    max-width: 650px; /* Garante que o formulário tenha um limite máximo de largura */
+    max-width: ; /* Garante que o formulário tenha um limite máximo de largura */
     background-color: #fff;
     border-radius: 10px;
     padding: 3rem;
@@ -358,11 +358,9 @@ html {
 }
 
 .btn {
+    width: 480px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin-top: 1rem;
 }
 
 .btn button {
@@ -374,8 +372,8 @@ html {
     border-radius: 10px;
     color: black;
     font-weight: 700;
+    margin-top: 1rem;
     transition: all 400ms ease-in;
-    
 }
 
 .btn button:hover {
@@ -509,10 +507,42 @@ footer {
         margin-left: 12rem;
     }
 
+    .contato {
+        padding-top: 4rem; /* Menos espaçamento superior em telas pequenas */
+    }
+
+    .contato h2 {
+        font-size: 3rem; /* Reduzir o tamanho da fonte para cabeçalho */
+        margin-bottom: 1.5rem;
+    }
+
+    .introducao-formulario {
+        font-size: 1.4rem; /* Fontes menores para telas pequenas */
+        margin-bottom: 2rem;
+        padding: 0 1rem;
+    }
+
+    .formulario {
+        padding: 2rem; /* Menos padding em telas pequenas */
+    }
+
+    .formulario input,
+    .formulario textarea {
+        font-size: 1.4rem; /* Fontes menores para inputs */
+        padding: 0.8rem; /* Ajustar o padding */
+    }
+
+    .formulario input[type="submit"] {
+        font-size: 1.6rem; /* Ajustar o tamanho da fonte no botão */
+        padding: 0.8rem 1.5rem; /* Ajustar padding do botão */
+    }
+
     .contato-secao {
-        display: block;
-        text-align: center;
-        font-size: 2rem;
+        width: 100%;
+        font-size: 1.6rem;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2rem;
     }
 
     .contato-secao div {
@@ -523,6 +553,15 @@ footer {
         font-size: 4rem; /* Ajuste de tamanho de fonte em telas menores */
         color: #ffc506; /* Garantir boa visibilidade */
     }    
+
+    .btn {
+        width: 100%; /* A largura do botão fica 100% */
+        justify-content: center;
+    }
+
+    .btn button {
+        width: 200px; /* Ajusta o tamanho do botão */
+    }
 }
 
 @media(max-width: 600px) {
