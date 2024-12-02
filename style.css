@@ -128,7 +128,7 @@ html {
 .sobre-nos img {
     width: 400px;
     height: 400px;
-    margin-top: 10rem;
+    margin-top: 20rem;
     margin-left: 10rem;
     border: 2px solid rgb(7, 7, 7);
     object-fit: cover; /* Ajusta a imagem para cobrir a área sem distorção */
@@ -144,10 +144,12 @@ html {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-top: 12rem;
 }
 
 .contentsobre h2 {
-    font-size: 6rem;
+    font-size: 5rem;
+    text-transform: uppercase;
     margin-bottom: 1rem;
 }
 
@@ -553,8 +555,9 @@ footer {
     }
 
     .cardapio h2 {
-        font-size: 4rem; /* Ajuste de tamanho de fonte em telas menores */
+        font-size: 3rem; /* Ajuste de tamanho de fonte em telas menores */
         color: #ffc506; /* Garantir boa visibilidade */
+        margin-top: 8rem;
     }    
 
     .btn {
@@ -583,6 +586,19 @@ footer {
     .contentsobre p {
         font-size: 1.6rem; /* Reduz o tamanho do texto */
         width: 90%; /* Ajusta a largura do parágrafo */
+    }
+
+    footer .footer-content {
+        width: 90%;  /* Ajuste a largura para telas menores */
+    }
+
+    footer .footer-content .footer-section {
+        flex: 1 1 100%;  /* As seções ocuparão toda a largura disponível em telas menores */
+        margin: 10px 0;
+    }
+
+    footer .footer-bottom {
+        font-size: 1rem;
     }
 }
 
@@ -690,92 +706,83 @@ footer {
 }
 
 /* Footer */
+/* Footer */
 footer {
     background-color: #333;
     color: white;
     padding: 40px 0;
     font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
-footer .container {
+footer .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80%;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-footer .row {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+footer .footer-content .footer-section {
+    margin: 10px;
+    flex: 1 1 200px; /* Garantir que cada seção ocupe pelo menos 200px */
 }
 
-footer .col-md-3, footer .col-sm-4 {
-    margin-bottom: 30px;
-}
-
-footer h3 {
-    color: #fff;
-    font-size: 24px;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-}
-
-footer ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-footer ul li {
+footer .footer-content .footer-section h3 {
+    font-size: 1.6rem;
     margin-bottom: 10px;
 }
 
-footer ul li a {
-    color: #ccc;
+footer .footer-content .footer-section p {
+    font-size: 1.4rem;
+    line-height: 1.6;
+}
+
+footer .footer-content .footer-section a {
+    color: #ffc506;
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 
-footer ul li a:hover {
+footer .footer-content .footer-section a:hover {
     color: #fff;
 }
 
-/* Ícones das Redes Sociais */
-footer .fa-stack {
-    margin-right: 10px;
+footer .footer-bottom {
+    width: 100%;
+    background-color: #222;
+    padding: 10px 0;
+    font-size: 1.2rem;
+    color: #ccc;
+    text-align: center;
 }
 
-footer .fa-stack .fa-circle {
-    color: #333;
-}
 
-footer .fa-stack .fa-facebook,
-footer .fa-stack .fa-instagram,
-footer .fa-stack .fa-youtube {
-    color: #fff;
-}
-
-footer .fa-stack:hover .fa-facebook {
-    color: #3b5998; /* Facebook color */
-}
-
-footer .fa-stack:hover .fa-instagram {
-    color: #e4405f; /* Instagram color */
-}
-
-footer .fa-stack:hover .fa-youtube {
-    color: #ff0000; /* YouTube color */
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-    footer .col-md-3 {
-        width: 100%;
+@media (max-width: 480px) {
+    footer {
+        font-size: 12px; /* Ajuste do tamanho da fonte */
     }
 
-    footer .col-sm-4 {
-        width: 100%;
-        text-align: center;
+    footer .footer-content .footer-section h3 {
+        font-size: 1.4rem; /* Tamanho da fonte dos títulos */
     }
 
-    footer .fa-stack {
-        margin: 5px 0;
+    footer .footer-content .footer-section p {
+        font-size: 1.2rem; /* Tamanho da fonte do texto */
+    }
+
+    footer .footer-content .footer-section a {
+        font-size: 1.2rem; /* Tamanho da fonte dos links */
+    }
+
+    footer .footer-bottom {
+        font-size: 1rem;
     }
 }
+
+
