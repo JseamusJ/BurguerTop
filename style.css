@@ -149,8 +149,9 @@ html {
 
 .contentsobre h2 {
     font-size: 5rem;
-    text-transform: uppercase;
     margin-bottom: 1rem;
+    text-transform: uppercase;
+    color: #ffc506;
 }
 
 .contentsobre p {
@@ -638,12 +639,11 @@ footer {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 150px;
+        width: 100%;
     }
 
     .btn button {
         font-size: 1.5rem;
-        width: 250px;
         width: 100%;
     }
 
