@@ -110,30 +110,6 @@ html {
     margin-bottom: 3rem;
 }
 
-.btn button {
-    width: 230px;
-    height: 60px;
-    cursor: pointer;
-    text-transform: uppercase;
-    background-color: #ffc506;
-    border-radius: 10px;
-    color: black;
-    font-weight: 700;
-    margin-top: 5rem;
-    transition: all 400ms ease-in;
-}
-
-.btn button:hover {
-    border: 1px solid #ffc506;
-    background-color: transparent;
-    color: #ffc506;
-}
-
-.btn {
-    width: 480px;
-    display: flex;
-    justify-content: space-between;
-}
 
 /* Sobre nós */
 .sobre-nos {
@@ -288,22 +264,22 @@ html {
 
 /* Contatos */
 
-.contatos {
-    width: 100%;
+.contato {
+    width: 100vw;
     min-height: 100vh;
     background-color: rgba(12, 12, 12, 0.8);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-bottom: 4rem;
     color: white;
     text-align: center;
+    padding-top: 8rem;
 }
 
-.contatos h3 {
-    font-size: 4rem;
-    margin-bottom: 3rem;
+.contato h2 {
+    font-size: 5rem;
+    margin-bottom: 2rem;
 }
 
 .introducao-formulario {
@@ -360,7 +336,7 @@ html {
     background-color: #e0a400;
 }
 
-.contatos-secao {
+.contato-secao {
     width: 650px;
     display: flex;
     justify-content: space-between;
@@ -368,16 +344,43 @@ html {
     margin-top: 3rem;
 }
 
-.contatos-secao i {
+.contato-secao i {
     margin-right: 1rem;
 }
 
-.contatos-secao div {
+.contato-secao div {
     cursor: pointer;
     transition: all 200ms ease-in;
 }
 
-.contatos-secao div:hover {
+.contato-secao div:hover {
+    color: #ffc506;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.btn button {
+    width: 120px;
+    height: 40px;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: #ffc506;
+    border-radius: 10px;
+    color: black;
+    font-weight: 700;
+    transition: all 400ms ease-in;
+    
+}
+
+.btn button:hover {
+    border: 1px solid #ffc506;
+    background-color: transparent;
     color: #ffc506;
 }
 
@@ -506,13 +509,13 @@ footer {
         margin-left: 12rem;
     }
 
-    .contatos-secao {
+    .contato-secao {
         display: block;
         text-align: center;
         font-size: 2rem;
     }
 
-    .contatos-secao div {
+    .contato-secao div {
         margin: 1rem;
     }
 
@@ -548,7 +551,7 @@ footer {
         width: 400px;
     }
 
-    .contatos-secao {
+    .contato-secao {
         width: 300px;
     }
 }
